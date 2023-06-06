@@ -1,0 +1,7 @@
+SELECT haslo FROM uzytkownicy WHERE login = "Justyna"
+
+SELECT COUNT(*) FROM dane
+
+SELECT uzytkownicy.login, dane.rok_urodz, dane.przyjaciol, dane.hobby, dane.zdjecie FROM uzytkownicy JOIN dane on uzytkownicy.id = dane.id WHERE uzytkownicy.login = "Justyna"
+
+ALTER TABLE `dane` ADD `stanowisko` TEXT NOT NULL AFTER `zdjecie`
